@@ -19,7 +19,7 @@ No reason in particular. Was tossing ideas around with a friend and we thought t
 ### How does it work?
 There are three main components to achieve this. The sensors, the microcontroller, and the website automation.
 1. Sensors
-    - The backbone of finding out if a piece of mail is inserted into the mailbox is a simple ultrasonic sensor. We designed a little housing to mount to the top of the mailbox so every single time a piece of mail is inserted, it will sense a distance closer to the top than normal. From there...
+    - The backbone of finding out if a piece of mail is inserted into the mailbox is a simple ultrasonic sensor. We designed a little housing to mount to the top of the mailbox so every single time a piece of mail is inserted, it will sense a distance closer to the top than normal.
 2. Microcontroller
     - For the brains of the project, I used a Photon microcontroller by Particle. It's connected to the internet by default, so when the ultrasonic sensor detects a change in distance it will publish an event online where...
 3. IFTTT is always listenting
