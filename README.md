@@ -5,8 +5,10 @@ These are a collection of some of the Arduino projects I've been worked on over 
 This project was more of an exploration into circuits and electronics than software-related, and the most hair-pulling fun I've had working an arduino project.
 ### TEA5767 Radio Module
 The main piece of the circuit, this is the module that introduced me to the process of reading datasheets. Overall the process wasn't too hard to get started, especially since there is an Arduino Library to automatically change the frequency of the radio but it still gave good practice for connecting to circuits that are more complicated than the ones I had been working with up to that point.
-### Amplifier, LCD and Death
+### Amplifier, Rotation and Death
 Since the actual electrical signal from the TEA5767 is quite weak, we need an amplifier module to pass the signal through the speaker. However the polarity of my amplifier module actually came reversed so it sent an amplified signal directly to the digital pins of my Arduino nano and fried it 😢. A grevious loss of 2.59. I also succeeded in updating the LCD to display the current radio frequency but it turns out I did not actually save that copy of the code.
+
+The radio is controlled by a rotary encoder to change the frequency channel. In all honesty the code that detects the rotation of the encoder isn't the smoothest but it works just fine for now. Maybe I'll find a way to smooth it out in the future but for now it works.
 ### Groovy Baby 📻
 You can check out the final product [here!](https://youtu.be/exMkGSQtmIo)
 As you can hear from the audio, it could've used an extra capacitor on the speaker to smooth out the audio. But after having spent a whopping 24.43$ on all the components, I didn't feel like waiting another 2 months for the capacitors to ship. However I did learn a lot about troubleshooting electronics, signals, and the importance of investing in a multimeter to actually check your components *especially if they're cheap!*
